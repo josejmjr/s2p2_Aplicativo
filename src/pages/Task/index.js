@@ -5,7 +5,7 @@ import { Container, Header, Left, Right, Body, Title, Button, Icon, View, Fab, L
 import IconFontAwesome from 'react-native-vector-icons/FontAwesome';
 import IconAntDesign from 'react-native-vector-icons/AntDesign';
 
-export default function Help(props) {
+export default function Task(props) {
     return (
         <Container>
         <Header style={{ flexDirection: 'row', backgroundColor: '#04b6b8' }}>
@@ -17,12 +17,12 @@ export default function Help(props) {
                 <Title> Neki IT </Title>
             </Body>
             <Right>
-            <Title> Ajuda </Title>
+            <Title> Tarefas </Title>
             </Right>
         </Header>
 
         <View style={styles.container}>
-            <Text style={styles.text}>Bem Vindo a Tela de Ajuda!</Text>
+            <Text style={styles.text}>Bem Vindo a Tela de Tarefas!</Text>
         </View>
         </Container>
 

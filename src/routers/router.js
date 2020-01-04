@@ -1,5 +1,5 @@
 import React from 'react';
-import { createAppContainer } from 'react-navigation';
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -7,23 +7,27 @@ Icon.loadFont();
 
 import Login from '../pages/Login'
 import Home from '../pages/Home';
-import About from '../pages/About';
-import Setting from '../pages/Setting';
-import Help from '../pages/Help';
+import Tarefas from '../pages/Task'
+import Sobre from '../pages/About';
+import Configurações from '../pages/Setting';
+import Ajuda from '../pages/Help';
 
 import CustomDrawer from '../components/CustomDrawer';
 
 const Routes = createAppContainer(
   createDrawerNavigator({
-    Login,
     Home,
-    About,
-    Setting,
-    Help,
+    Tarefas,
+    Sobre,
+    Configurações,
+    Ajuda,
+    Login,
   }, {
       initialRouteName: 'Login',
       contentComponent: CustomDrawer,
+      backBehavior: "none",
     })
+
 );
 
 export default Routes;

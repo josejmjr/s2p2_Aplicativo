@@ -11,11 +11,11 @@ export default class App extends Component {
   render() {
     //console.log({navigation: this.props.navigation})
     return (
-      
+
      <ScrollView contentContainerStyle={styles.contentContainer}>
       <LinearGradient colors={['#04b6b8', '#1b536a']} style={styles.mainContainer}>
       <StatusBar backgroundColor='#1295a3' barStyle='light-content' />
-        
+      
         <View style={styles.mainContainer}>
           
           <Image

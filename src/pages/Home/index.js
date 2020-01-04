@@ -22,7 +22,7 @@ export default function Home(props) {
                 </Right>
             </Header>
             <Tabs>
-                <Tab heading={<TabHeading style={styles.tabHeading} ><Text style={styles.listT}>TO DO</Text></TabHeading>}>
+                <Tab heading={<TabHeading style={styles.tabHeading} ><Text style={styles.listT}>Para Fazer</Text></TabHeading>}>
                     <View>
                         <ScrollView>
                             <Card style={styles.card}>
@@ -155,7 +155,7 @@ export default function Home(props) {
                         </Fab>
                     </View>
                 </Tab>
-                <Tab heading={<TabHeading style={styles.tabHeading} ><Text style={styles.listT}>DOING</Text></TabHeading>}>
+                <Tab heading={<TabHeading style={styles.tabHeading} ><Text style={styles.listT}>Fazendo</Text></TabHeading>}>
                     <View>
                         <ScrollView>
                             <Card style={styles.doing}>
@@ -191,7 +191,7 @@ export default function Home(props) {
                         </ScrollView>
                     </View>
                 </Tab>
-                <Tab heading={<TabHeading style={styles.tabHeading} ><Text style={styles.listT}>DEPLOY</Text></TabHeading>}>
+                <Tab heading={<TabHeading style={styles.tabHeading} ><Text style={styles.listT}>Prontas</Text></TabHeading>}>
                     <View>
                         <ScrollView>
                             <Card style={styles.deploy}>

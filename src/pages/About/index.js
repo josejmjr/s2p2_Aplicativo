@@ -1,11 +1,32 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet, StatusBar, Image, ScrollView } from 'react-native';
+import { Container, Header, Left, Right, Body, Title, Button, Icon, View, Fab, List, ListItem, Thumbnail, Text, Badge, Content, Tab, Tabs, TabHeading, Card, CardItem } from 'native-base';
 
-export default function About() {
+import IconFontAwesome from 'react-native-vector-icons/FontAwesome';
+import IconAntDesign from 'react-native-vector-icons/AntDesign';
+
+export default function About(props) {
     return (
+        <Container>
+        <Header style={{ flexDirection: 'row', backgroundColor: '#04b6b8' }}>
+            <StatusBar backgroundColor='#1295a3' barStyle='light-content' />
+            <Left>
+                <IconAntDesign onPress={() => props.navigation.openDrawer()} name="bars" size={30} color="#ffffff" />
+            </Left>
+            <Body>
+                <Title> Neki IT </Title>
+            </Body>
+            <Right>
+            <Title> Sobre </Title>
+            </Right>
+        </Header>
+
         <View style={styles.container}>
-            <Text style={styles.text}>Welcome Tela About!</Text>
+            <Text style={styles.text}>Bem Vindo a Tela Sobre!</Text>
         </View>
+        </Container>
+
+        
     )
 }
 
